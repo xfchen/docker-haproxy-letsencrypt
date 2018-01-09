@@ -20,6 +20,7 @@ services:
       # It's important to have real ports handled by this container
       - "80:80"
       - "443:443"
+      - "8080:8080"
     restart: unless-stopped
     volumes:
       # This keeps certs and cronstamps across reloads
